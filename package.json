@@ -1,0 +1,22 @@
+{
+  "name": "custom_snippets",
+  "engines": {
+    "vscode": "^1.11.0"
+  },
+  "contributes": {
+    "snippets": [
+      {
+        "language": "markdown",
+        "path": "./markdown.json"
+      },
+      {
+        "language": "markdown",
+        "path": "./math.json"
+      },
+      {
+        "language": "scheme",
+        "path": "./scheme.json"
+      }
+    ]
+  }
+}
