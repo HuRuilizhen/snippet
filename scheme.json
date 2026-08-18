@@ -17,6 +17,21 @@
 		],
 		"description": "scheme condition else form expression"
 	},
+	"expression: lambda": {
+		"prefix": ["lam"],
+		"body": [
+			"(lambda (${1:formal-parameters}) ${2:body})"
+		],
+		"description": "scheme lambda expression"
+	},
+	"expression: let": {
+		"prefix": ["let"],
+		"body": [
+			"(let ((${1:var} ${2:exp})$3)",
+			"${4:body})"
+		],
+		"description": "scheme let expression"
+	},
 	"function environment: single line": {
 		"prefix": ["defs"],
 		"body": [
@@ -31,6 +46,13 @@
 			"\t${3:function-body})"
 		],
 		"description": "scheme multi-line function environment"
+	},
+	"function environment: lambda": {
+		"prefix": ["defl"],
+		"body": [
+			"(lambda (${1:formal-parameters}) ${2:body})"
+		],
+		"description": "scheme lambda function environment"
 	},
 	"function definition: square": {
 		"prefix": ["square"],
