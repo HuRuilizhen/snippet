@@ -46,5 +46,19 @@
 			"\\mathbb{Z}"
 		],
 		"description": "set of integers"
+	},
+	"symbol: map arrow between elements": {
+		"prefix": ["|->"],
+		"body": [
+			"\\mapsto"
+		],
+		"description": "map arrow between elements"
+	},
+	"symbol: map arrow between sets": {
+		"prefix": ["->"],
+		"body": [
+			"\\to"
+		],
+		"description": "map arrow between sets"
 	}
 }
