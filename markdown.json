@@ -9,5 +9,17 @@
 			"<!--toc:end-->"
 		],
 		"description": "table of content comment subsection"
+	},
+	"text block of tree structure": {
+		"prefix": ["tree"],
+		"body": [
+			"```text",
+			"${1:root}/",
+			"├── ${2:node}/",
+			"│   └── ${3:node}",
+			"└── ${4:node}",
+			"```"
+    ],
+    "description": "text block of tree structure"
 	}
 }
