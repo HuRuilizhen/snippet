@@ -1,5 +1,5 @@
 {
-	"table of content section": {
+	"table of content": {
 		"prefix": ["tocs"],
 		"body": [
 			"## Table of Content",
@@ -8,7 +8,7 @@
 			"",
 			"<!--toc:end-->"
 		],
-		"description": "table of content comment subsection"
+		"description": "table of contents markers"
 	},
 	"text block of tree structure": {
 		"prefix": ["tree"],

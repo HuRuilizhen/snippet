@@ -6,7 +6,7 @@
 			"\t((${1:predication}) ${2:branch})",
 			"\t((${3:predication}) ${4:branch}))"
 		],
-		"description": "scheme condition normal form expression"
+		"description": "condition normal form expression"
 	},
 	"expression: condition - else form": {
 		"prefix": ["conde"],
@@ -15,14 +15,14 @@
 			"\t((${1:predication}) ${2:branch})",
 			"\t(else ${3:default-branch}))"
 		],
-		"description": "scheme condition else form expression"
+		"description": "condition else form expression"
 	},
 	"expression: lambda": {
 		"prefix": ["lam"],
 		"body": [
 			"(lambda (${1:formal-parameters}) ${2:body})"
 		],
-		"description": "scheme lambda expression"
+		"description": "lambda expression"
 	},
 	"expression: let": {
 		"prefix": ["let"],
@@ -30,14 +30,14 @@
 			"(let ((${1:var} ${2:exp})$3)",
 			"${4:body})"
 		],
-		"description": "scheme let expression"
+		"description": "let expression"
 	},
 	"function environment: single line": {
 		"prefix": ["defs"],
 		"body": [
 			"(define (${1:function-name} ${2:parameters}) ${3:function-body})"
 		],
-		"description": "scheme single-line function environment"
+		"description": "single-line function environment"
 	},
 	"function environment: multi-line": {
 		"prefix": ["defm"],
@@ -45,28 +45,28 @@
 			"(define (${1:function-name} ${2:parameters})",
 			"\t${3:function-body})"
 		],
-		"description": "scheme multi-line function environment"
+		"description": "multi-line function environment"
 	},
 	"function environment: lambda": {
 		"prefix": ["defl"],
 		"body": [
 			"(lambda (${1:formal-parameters}) ${2:body})"
 		],
-		"description": "scheme lambda function environment"
+		"description": "lambda function environment"
 	},
 	"function definition: square": {
 		"prefix": ["square"],
 		"body": [
 			"(define (square x) (* x x))"
 		],
-		"description": "scheme square function definition"
+		"description": "square function definition"
 	},
 	"function definition: identity": {
 		"prefix": ["iden"],
 		"body": [
 			"(define (identity x) x)"
 		],
-		"description": "scheme identity function definition"
+		"description": "identity function definition"
 	}
 }
 
