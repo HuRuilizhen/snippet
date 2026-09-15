@@ -21,5 +21,20 @@
 			"```"
     ],
     "description": "text block of tree structure"
+	},
+	"pass status emoji": {
+		"prefix": ["epass"],
+		"body": ["✅"],
+		"description": "emoji of pass status"
+	},
+	"cancel status emoji": {
+		"prefix": ["ecancel"],
+		"body": ["❌"],
+		"description": "emoji of cancel status"
+	},
+	"delete status emoji": {
+		"prefix": ["edelete"],
+		"body": ["🗑️"],
+		"description": "emoji of delete status"
 	}
 }
