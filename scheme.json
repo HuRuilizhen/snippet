@@ -67,6 +67,13 @@
 			"(define (identity x) x)"
 		],
 		"description": "identity function definition"
+	},
+	"primitive: nil": {
+		"prefix": ["nil"],
+		"body": [
+			"'()"
+		],
+		"description": "nil primitive"
 	}
 }
 
