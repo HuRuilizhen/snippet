@@ -68,6 +68,32 @@
 		],
 		"description": "identity function definition"
 	},
+	"function definition: accumulate": {
+		"prefix": ["acc", "accumulate"],
+		"body": [
+			"(define (accumulate op initial sequence)",
+			"\t(if (null? sequence) initial",
+    	"\t\t(op (car sequence) (accumulate op initial (cdr sequence)))))"
+		],
+		"description": "accumulate function definition"
+	},
+	"function definition: flatmap": {
+		"prefix": ["fmap", "flatmap"],
+		"body": [
+			"(define (flatmap proc seq)",
+			"\t(accumulate append '() (map proc seq)))"
+		],
+		"description": "flatmap function definition"
+	},
+	"function definition: enumerate-interval": {
+		"prefix": ["enumi", "enumerate-interval"],
+		"body": [
+			"(define (enumerate-interval low high)",
+  		"\t(if (> low high) '()",
+    	"\t\t(cons low (enumerate-interval (+ low 1) high))))"
+		],
+		"description": "interval enumeration function definition"
+	},
 	"primitive: nil": {
 		"prefix": ["nil"],
 		"body": [
