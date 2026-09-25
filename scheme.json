@@ -82,7 +82,7 @@
 		"body": [
 			"(define (filter predicate sequence)",
 			"\t(cond",
-    	"\t\t((null? sequence) nil)",
+    	"\t\t((null? sequence) '())",
     	"\t\t((predicate (car sequence))",
       "\t\t\t(cons (car sequence) (filter predicate (cdr sequence))))",
       "\t\t(else (filter predicate (cdr sequence)))))"
