@@ -77,6 +77,18 @@
 		],
 		"description": "accumulate function definition"
 	},
+	"function definition: filter": {
+		"prefix": ["filter"],
+		"body": [
+			"(define (filter predicate sequence)",
+			"\t(cond",
+    	"\t\t((null? sequence) nil)",
+    	"\t\t((predicate (car sequence))",
+      "\t\t\t(cons (car sequence) (filter predicate (cdr sequence))))",
+      "\t\t(else (filter predicate (cdr sequence)))))"
+		],
+		"description": "filter function definition"
+	},
 	"function definition: flatmap": {
 		"prefix": ["fmap", "flatmap"],
 		"body": [
